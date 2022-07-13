@@ -1,4 +1,4 @@
-import person from './images/person.jpeg'
+import person from '../Images/person.jpeg';
 
 const About = ({userData}) => {
     console.log(userData);

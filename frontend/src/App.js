@@ -1,15 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './Navbar';
-import Home from './Home';
-import About from './About';
-import Form from './Form';
-import VideoOne from './VideoOne';
-import Bottom from './Bottom';
+import Navbar from './Components/Navbar';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Form from './Pages/Form';
+import VideoOne from './Pages/VideoOne';
+import Bottom from './Components/Bottom';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import Questionnaire from './Questionnaire';
+import Questionnaire from './Pages/Questionnaire';
 import { useState, useEffect } from 'react';
-import Endpage from './Endpage';
+import Endpage from './Pages/Endpage';
 
 var userData = {};
 const endpoint = 'http://localhost:3001/'; //replace w endpoint for server
@@ -38,7 +38,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
         <div className="content">
           <Routes>
             <Route path="/" element={<Home />}></Route>

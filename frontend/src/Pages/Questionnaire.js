@@ -1,4 +1,4 @@
-import NextButton from './NextButton';
+import NextButton from '../Components/NextButton';
 import { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 
